@@ -1,0 +1,313 @@
+import IMAGES from "../images.js"
+
+const DATA = {
+  users: [
+    {
+      _id: "65be1d13789a01a64ae1ce28",
+      firstname: "Loganathan LOCAL",
+      lastname: "G",
+      email: "loganathan2624@gmail.com",
+      password: "$2a$10$Vmpm2wtb3V68OUM.d5jkG.9C5FvwebA8NSWAuJHtNb1OKwHQoTUJm",
+      role: "user",
+      __v: 0,
+    },
+    {
+      _id: "65c0fde47801c2d5d79c388a",
+      firstname: "Joseph",
+      lastname: "Vijay",
+      email: "joseph5731@gmail.com",
+      password: "$2a$10$La9ShOZ/5kttC5dkeuoF4ey5xYIuLXsISsFfwuSt3dEN9HjKZCK7G",
+      role: "user",
+      __v: 0,
+    },
+    {
+      _id: "65c224352318582043564460",
+      firstname: "Rethis",
+      lastname: "S",
+      email: "rethis@gmail.com",
+      password: "$2a$10$Jv0Zos8SF8c4A6M1TE3aBuu.sQcdfOtUVDT6W7kNEF9n.D4JpBQSG",
+      role: "seller",
+      __v: 0,
+    },
+    {
+      _id: "65c2265c2318582043564468",
+      firstname: "Rahul",
+      lastname: "M",
+      email: "rahul@gmail.com",
+      password: "$2a$10$CRzuI.aLWYY.MXFV.KauoeUjdE9bT.LPxM0FGSz8w8sQhSRjwQzY6",
+      role: "admin",
+      __v: 0,
+    },
+    {
+      _id: "65cb659b5454469e6870c71a",
+      firstname: "Dhoni",
+      lastname: "Vijay",
+      email: "dhoni@gmail.com",
+      password: "$2a$10$9QIIBgCmbqqyhue4826W2OBLY5LWAAyP93o/N1YKK2JmjkmsTlNwu",
+      role: "admin",
+      __v: 0,
+    },
+  ],
+  
+  products: [
+    {
+      _id: "65941cce5c153d09205d5bea",
+      name: "Black Fannel Shirt",
+      image: IMAGES.blackFannelShirt,
+      price: 1200,
+      description:
+        "Dive into comfort with our Black Flannel Linen Shirt, tailored for the modern man. Crafted from premium linen, this shirt ensures breathability and durability. Its classic black hue and slim fit design make it a versatile choice for any occasion, from office meetings to casual weekends. Elevate your wardrobe with this timeless piece.",
+      size: ["S", "M"],
+      gender: 'Male',
+      quantity: 2,
+      __v: 0,
+      createdBy: "rethis@gmail.com",
+    },
+    {
+      createdBy: "rethis@gmail.com",
+      _id: "65941fb0c497bc87dbf15cb6",
+      image: IMAGES.blueStripeShirt,
+      name: "Blue Stripe Shirt",
+      price: 949,
+      gender: 'Male',
+      description:
+        "Experience the perfect blend of style and comfort with our Blue Stripe Shirt. This piece combines the timeless appeal of stripes with the softness of season-friendly cotton. Its tailored fit and vibrant blue hue make it an ideal choice for making a statement at work or on the weekend.",
+      size: ["s", "m", "l", "xl"],
+      quantity: 1,
+      __v: 0,
+    },
+    {
+      createdBy: "rethis@gmail.com",
+      _id: "65941fd7c497bc87dbf15cb8",
+      image: IMAGES.greenLinenShirt,
+      name: "Green Linen Shirt",
+      price: 949,
+      gender: 'Male',
+      description:
+        "Embrace nature's palette with our Green Linen Shirt. Crafted from 100% breathable linen, this shirt is your go-to for staying cool and comfortable. The rich green color complements any skin tone, making it a versatile addition to your wardrobe for any season.",
+      size: ["s", "m", "l", "xl"],
+      quantity: 1,
+      __v: 0,
+    },
+    {
+      createdBy: "rethis@gmail.com",
+      _id: "65941fe8c497bc87dbf15cba",
+      image: IMAGES.beigeLinenShirt,
+      name: "Beige Linen Shirt",
+      price: 999,
+      gender: 'Male',
+      description:
+        "Elevate your everyday look with the Beige Linen Shirt, a symbol of effortless chic. Made from high-quality linen, this shirt offers both comfort and style. Its neutral beige color and relaxed fit make it a perfect match for any trousers or jeans, ideal for casual outings or a relaxed day at the office.",
+      size: ["s", "m", "l"],
+      quantity: 1,
+      __v: 0,
+    },
+    {
+      createdBy: "rethis@gmail.com",
+      _id: "6594200dc497bc87dbf15cbc",
+      image: IMAGES.charcoalBlackshirt,
+      name: "Charcoal Black Flannel Shirt",
+      price: 1999,
+      gender: 'Male',
+      description:
+        "Introducing the Charcoal Black Flannel Shirt, your new wardrobe staple. This shirt combines the warmth of flannel with the sleekness of charcoal black, offering a unique blend of comfort and style. Ideal for cooler months, it's a versatile piece that can be dressed up or down.",
+      size: ["s", "m", "l"],
+      quantity: 1,
+      __v: 0,
+    },
+    {
+      createdBy: "rethis@gmail.com",
+      _id: "65942055c497bc87dbf15cbe",
+      image: IMAGES.maroonShirt,
+      name: "Maroon Flannel Shirt",
+      price: 799,
+      gender: 'Male',
+      description:
+        "Add a splash of color to your collection with our Maroon Flannel Shirt. This cozy flannel piece is not only warm but also stylish, featuring a deep maroon hue that stands out in a crowd. It's perfect for layering in the winter or wearing as a statement piece in milder weather.",
+      size: ["s", "m", "l", "xl", "xxl"],
+      quantity: 1,
+      __v: 0,
+    },
+    {
+      createdBy: "rethis@gmail.com",
+      _id: "65942068c497bc87dbf15cc0",
+      image: IMAGES.navyShirt,
+      name: "Navy Linen Shirt",
+      price: 799,
+      gender: 'Male',
+      description:
+        "The Navy Linen Shirt is a testament to timeless elegance. Crafted from the finest linen, it offers unmatched comfort and breathability. The classic navy color makes it a versatile choice for any wardrobe, easily paired with jeans or khakis for a polished look.",
+      size: ["s", "m", "l", "xl"],
+      quantity: 1,
+      __v: 0,
+    },
+    {
+      createdBy: "rethis@gmail.com",
+      _id: "6594208ac497bc87dbf15cc2",
+      image: IMAGES.polarLinenShirt,
+      name: "Polar Linen Shirt",
+      price: 1299,
+      gender: 'Male',
+      description:
+        "Stay cool and stylish with the Polar Linen Shirt, designed for the man who values comfort and elegance. Made from lightweight linen, this shirt is ideal for warm days. Its crisp, clean hue brings a breath of fresh air to your wardrobe, perfect for seaside getaways or sunny days in the city.",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      __v: 0,
+    },
+    {
+      createdBy: "rethis@gmail.com",
+      _id: "659420a1c497bc87dbf15cc4",
+      image: IMAGES.lightYellowLinenShirt,
+      name: "Light Yellow Linen Shirt",
+      price: 999,
+      gender: 'Male',
+      description:
+        "Brighten up your day with the Light Yellow Linen Shirt. Made from soft, breathable linen, this shirt is perfect for any season. Its cheerful yellow shade adds a pop of color to your ensemble, making it a great choice for weekends, holidays, or any occasion that calls for a bit of sunshine.",
+      size: ["s", "m", "l", "xl"],
+      quantity: 2,
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83876e",
+      image: IMAGES.beigeShirt,
+      name: "beige linen shirt",
+      price: 1200,
+      gender: 'Male',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83877e", // not database id. its edited by myself.
+      image: IMAGES.navyHemTop,
+      name: "Navy Blue Hem Top",
+      price: 999,
+      gender: 'feMale',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83878e", // not database id. its edited by myself.
+      image: IMAGES.greenBeltedWaistTrouser,
+      name: "Green Belted Waist Trouser",
+      price: 1899,
+      gender: 'feMale',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83879e", // not database id. its edited by myself.
+      image: IMAGES.lilacJacket,
+      name: "Lilac Jacket",
+      price: 2599,
+      gender: 'feMale',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83880e", // not database id. its edited by myself.
+      image: IMAGES.solidBlackJacket,
+      name: "Solid Black Jacket",
+      price: 1899,
+      gender: 'feMale',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83881e", // not database id. its edited by myself.
+      image: IMAGES.frontCutOutPinkDress,
+      name: "Front Cut-Out Pink Dress",
+      price: 1449,
+      gender: 'feMale',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83882e", // not database id. its edited by myself.
+      image: IMAGES.ivoryWhiteTop,
+      name: "Ivory White Top",
+      price: 899,
+      gender: 'feMale',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83886e", // not database id. its edited by myself.
+      image: IMAGES.squareNeckPinkDress,
+      name: "Square Neck Pink Dress",
+      price: 1299,
+      gender: 'feMale',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83883e", // not database id. its edited by myself.
+      image: IMAGES.whitePrintedTop,
+      name: "White Printed Top",
+      price: 999,
+      gender: 'feMale',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83884e", // not database id. its edited by myself.
+      image: IMAGES.beigeCargoJeans,
+      name: "Beige Cargo Jeans",
+      price: 1999,
+      gender: 'feMale',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+    {
+      _id: "65c4cb7acf8e3f977e83885e", // not database id. its edited by myself.
+      image: IMAGES.camlaGreenTrouser,
+      name: "Camla Green Trouser",
+      price: 1299,
+      gender: 'feMale',
+      description: "A cotton fabric thats suit for all seasons",
+      size: ["s", "m", "l", "xl"],
+      quantity: 3,
+      createdBy: "joseph5731@gmail.com",
+      __v: 0,
+    },
+
+  ],
+};
+
+// function loadDB() {
+//     const keys = Object.keys(data);
+//     keys.forEach(e => {
+//         localStorage.setItem(e, JSON.stringify(data[e]))
+//     })
+// }
+
+export default DATA;

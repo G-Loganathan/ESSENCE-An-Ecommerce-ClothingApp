@@ -1,0 +1,23 @@
+{
+    "firstname":"Joseph",
+    "lastname":"Vijay",
+    "password":"qwertyuh123",
+    "email":"joseph5731@gmail.com",
+    "role":"user"
+}
+
+{
+    "firstname":"Rahul",
+    "lastname":"M",
+    "password":"qwertyuh123",
+    "email":"rahul@gmail.com",
+    "role":"admin"
+}
+
+{
+    "firstname":"Joseph",
+    "lastname":"Vijay",
+    "password":"qwertyuh123",
+    "email":"rethis@gmail.com",
+    "role":"seller"
+}

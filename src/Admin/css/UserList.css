@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
+.userlist__container{
+    padding: 80px 150px 100px 150px;
+    background-color: #fdfdfd;
+    height: 100vh;
+}
+
+.userlist__table{
+    margin-top: 40px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 20px;
+}
+
+.userlist__heading p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.userlist__table th{
+    text-align: start;
+    padding: 20px;
+}
+
+.userlist__table, th, tr, td{
+    border-collapse: collapse;
+    /* border: 1px solid black; */
+}
+
+th{
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    font-family: "Montserrat";
+}
+
+td{
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.userlist__table .deactivate-btn{
+    background-color: rgb(220, 0, 0);
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}

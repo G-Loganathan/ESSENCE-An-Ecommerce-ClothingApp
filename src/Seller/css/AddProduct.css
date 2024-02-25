@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
+.addproduct__container{
+    padding: 60px 120px 120px 120px;
+    background-color: #faf9f8;
+    
+}
+
+.productinfo__heading{
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.addproduct__form{
+    background-color: white;
+    display: flex;
+    padding: 40px;
+}
+
+.addproduct__form .input-grp{
+    margin-bottom: 30px;
+}
+
+.addproduct__form .input-grp label{
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.addproduct__form .input-grp input{
+    width: 100%;
+    padding: 14px 0px 14px 15px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    outline-color: rgb(149, 149, 244);
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.addproduct__form .buttons-div{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.addproduct__form .buttons-div .cancel{
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    color: rgb(251, 100, 100);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid rgb(249, 125, 125);
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.addproduct__form .buttons-div .save{
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+textarea{
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    outline-color: rgb(149, 149, 244);
+    padding: 10px;
+}
+
+.product-name{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.description{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.addproduct__form .form__right{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+
+.addimage__div{
+    border: 2px dashed lightgray;
+    width: 200px;
+    height: 100%;
+    display: block;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

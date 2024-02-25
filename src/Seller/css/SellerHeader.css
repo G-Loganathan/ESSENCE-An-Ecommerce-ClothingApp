@@ -1,0 +1,15 @@
+.sellerheader__container{
+    padding: 10px;
+    background-color: #faf9f8;
+}
+
+.sellerheader__ul a{
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sellerheader__ul a i{
+    margin-right: 5px;
+    font-size: 14px;
+} 

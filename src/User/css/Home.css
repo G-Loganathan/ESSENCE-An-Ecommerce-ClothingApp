@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.home__container .padding{
+    padding: 20px 60px 0px 60px;
+}
+
+
+.home__content{
+    background-image: url(../assets/background-home1.jpg);
+    height: 90vh;
+    background-size: cover;
+    padding: 150px 0px 0px 150px;
+    background-position: 120px 0px;
+}
+
+
+.home__elements{
+    display: inline-block;
+    width: 600px;
+}
+
+.home__elements .p1{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(250, 51, 51);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.home__elements .h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 10px;  
+    color: rgb(37, 37, 37); 
+}
+
+
+.home__elements .p2{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(85, 85, 85);
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 80px;
+    line-height: 1.50;
+}
+
+.home__elements .shopnow-btn{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 25px 15px 30px;
+}
+
+.shopnow-btn .arrow{
+    margin-left: 15px;
+}
+
+
+
+
+
+.product__overview{
+    padding: 100px 110px 150px 110px;
+    
+}
+
+.product__overview .heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.product__overview .overview__tabs{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.product__overview .overview__tabs .tab{
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: lightslategrey;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.overview__tabs .active-tab{
+    border-bottom: 2px solid rgb(136, 136, 136);
+    color: red;
+}
+
+
+.product__overview .products__collection{
+    /* display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+}
+
+.viewall__div{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.viewall__div button{
+    padding: 10px 35px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(93, 92, 92);
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    border: 1px solid lightslategray;
+    cursor: pointer;
+}
+
+.viewall__div button:hover{
+    border: 1px solid black;
+    color: rgb(16, 16, 16);
+}
+
+
+@media screen and (max-width: 768px){
+
+    .home__container .padding{
+        padding: 10px 12px 0px 12px;
+    }
+    
+    .home__content{
+        height: 20vh;
+        background-position: 370px 0px;
+        padding: 120px 0px 0px 30px;
+    }
+        
+    .home__elements{
+        width: 300px;
+    }
+
+    .home__elements .p1{
+        color: black;
+        font-size: 10px;
+    }
+
+    .home__elements .h1{
+        font-size: 16px;
+        color: whitesmoke;
+        background-color: rgb(184, 116, 116);
+        padding: 5px;
+    }
+
+
+    .home__elements .p2{
+        display: none;
+        font-size: 10px;
+        padding: 5px;
+        color: white;
+    }
+
+    .home__elements .shopnow-btn{
+        font-size: 9px;
+        padding: 5px 12px 5px 12px;
+        background-color: rgb(84, 82, 82);
+        border: none;
+    }
+
+    .shopnow-btn .arrow{
+        margin-left: 10px;
+    }
+
+    .product__overview{
+        padding: 70px 25px 150px 25px;
+    }
+
+    .product__overview .heading{
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    
+    .product__overview .overview__tabs .tab{
+        font-size: 14px;    
+    }
+
+    .product__overview .products__collection{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.1rem;
+    }
+
+}

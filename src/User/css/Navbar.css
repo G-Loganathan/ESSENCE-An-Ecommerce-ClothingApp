@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
+          
+
+/* LOGO */
+            
+.nav-logo{
+    width: 120px;
+}
+
+.nav-logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-logo h3{
+    padding-left: 15px;
+}
+
+            /* Nav Menu */
+
+header{
+    position: absolute;
+    top: 80px;
+    left: 800px;
+    right: 0;
+    z-index: 40;
+}  
+
+.navbar{
+    background-color: white;
+    height: 50px;
+    padding: 12px 60px 12px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px;
+}
+
+
+
+
+.nav-menu .nav-link{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    opacity: 0.9;
+    position: relative; 
+}
+
+  
+.nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 1px;
+    bottom: -3px;
+    width: 0px;
+    background-color: #031D44;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+
+
+        /* ICONS */
+
+
+.cartIcon, 
+.profileIcon,
+.searchIcon,
+.heartIcon {
+    width: 20px;
+    padding: 10px;
+}
+
+.profileIcon{
+    opacity: 0.8;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.nav-cart-count{
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    margin-left: 100px;
+    margin-top: -22px;
+    font-size: 8px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(144, 143, 143);
+    height: 35px;
+    margin-right: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.searchInput{
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    outline: 0;
+}
+
+.searchIcon{
+    opacity: 0.9;
+    width: 16px;
+    color: whitesmoke;
+}
+
+.searchbgblack{
+    background-color: rgb(58, 58, 58);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchbgblack:hover{
+    background-color: black;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+body, html {
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.nav-menu {
+    display: flex; 
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+
+    .nav-menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: white; 
+        z-index: 20; 
+    }
+
+    .nav-menu.visible {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        order: -1;
+        font-size: 18px
+    }
+
+
+    .searchbar{
+        display: none;
+    }
+
+    .navbar {
+        padding: 10px 20px 10px 25px;
+    }
+
+    .nav-logo h3 {
+        font-size: 16px; 
+        padding-left: 0;
+    }
+
+    .cartIcon, .profileIcon, .heartIcon {
+        width: 18px;
+    }
+
+    .nav-cart-count {
+        margin-left: 95px; 
+        margin-top: -20px;
+    }
+    
+    .nav-link {
+        padding: 12px;
+        border-bottom: 1px solid #ddd; 
+    }
+}

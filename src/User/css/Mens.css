@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.mens__container{
+    padding: 60px 120px 50px 120px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.mens__heading{
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.mens-sortby-div{
+    text-align: center;
+}
+
+.mens__container .select-tag{
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid lightslategray;
+    outline: 0;
+}
+
+.mens__container .select-tag option{
+    font-family: "Montserrat", sans-serif;
+    padding: 5px;
+}
+
+.mens__collection{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+} 
+
+@media screen and (max-width: 768px){
+
+    .mens__container{
+        padding: 50px 20px 50px 20px;
+    }
+
+    .mens__heading{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .mens__collection{
+        margin-top: 60px;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.1rem;
+    } 
+
+    .mens__container .select-tag{
+        font-size: 12px;
+    }
+
+}

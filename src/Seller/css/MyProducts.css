@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.myproducts__container{
+    padding: 60px 100px 50px 100px;
+    background-color: #faf9f8;
+}
+
+.myproducts__heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.myproducts__heading p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    font-size: 20px;
+}
+
+.myproducts__heading a{
+    background-color: black;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.myproducts__heading a i{
+    margin-right: 10px;
+}
+
+
+.myproducts__mainheadings{
+    margin-top: 30px;
+    margin-bottom: 8px;
+    display: grid;
+    padding: 8px;
+    grid-template-columns: 0.2fr 2fr 1fr 1fr 1fr;
+}
+
+
+
+.myproducts__mainheadings p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(112, 112, 112);
+}
+
+.myproducts__items{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 1fr 1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    padding-bottom: 20px;
+}
+
+.myproducts__items .buttons-div button{
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.myproducts__items .buttons-div .update{
+    background-color: rgb(104, 113, 210);
+}
+
+.myproducts__items .buttons-div .delete{
+    background-color: rgb(255, 77, 77);
+}

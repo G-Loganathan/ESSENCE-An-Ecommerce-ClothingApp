@@ -1,0 +1,7 @@
+.search__container{
+    height: 50vh;
+    margin: 10px;
+    background-color: white; 
+    border: 1px solid rgb(209, 208, 208);
+    padding: 20px;
+}

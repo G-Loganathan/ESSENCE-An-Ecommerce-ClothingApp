@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.userinfo__container{
+    background-color: white;
+    padding: 100px 120px 100px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userinfo__form{
+    background-color: #faf9f8;
+    display: flex;
+    padding: 50px;
+}
+
+.userinfo__left{
+    /* remove the below margin for mobile responsive */
+    margin-right: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+.userinfo__left img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.userinfo__left .greeting{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+.userinfo__left .logoutbutton{
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.userinfo__left .logoutbutton:hover{
+    border: 1px solid rgb(155, 154, 154);
+    color: rgb(91, 91, 91);
+}
+
+.fa-arrow-right-from-bracket{
+    margin-left: 10px;
+}
+
+.userinfo__right .userinfo__heading{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.userinfo__right .label-grps{
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(91, 91, 91);
+}
+
+.userinfo__right .input-grps{
+    padding: 13px 15px;
+    border-radius: 2px;
+    outline: 0;
+    border: 1px solid lightgray;
+    width: 250px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.userinfo__right .gridinputgrps{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.userinfo__right .savechangesbtn-div{
+    margin-top: 57px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.userinfo__right .savechangesbtn{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 12px 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    cursor: pointer;
+}
+
+.userinfo__right .savechangesbtn:hover{
+    background-color: rgb(59, 59, 59);
+}
+
+.userinfo__right .emailinput{
+    cursor:not-allowed;
+}

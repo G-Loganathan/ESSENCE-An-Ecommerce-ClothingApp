@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
+.login__container{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf9f8;
+}
+
+.login__form{
+    display: inline-block;
+    padding: 25px;
+    width: 400px;
+}
+
+.login__form .login__heading{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.login__form .input-grp{
+    margin-top: 20px;
+}
+
+.login__form .input-grp label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    display: block;
+}
+
+.login__form .input-grp input{
+    font-size: 14px;
+    padding: 12px 15px 12px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    opacity: 0.8;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    outline: 0px;
+}
+
+.login__form .input-star{
+    color: rgb(202, 6, 6);
+}
+
+.login__form .input-bottom{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__form .input-bottom .checkbox-input{
+    position: relative;
+    top: 2px;
+}
+
+
+.login__form .input-bottom .checkbox-label{
+    font-size: 13px;
+    margin-left: 5px;
+    
+}
+
+.login__form .forget-pwd, .forget-pwd a{
+    text-align: end;
+    font-size: 12px;
+    color: black;
+    margin-top: 5px;
+}
+
+
+.login__form .login__btn .login{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: #222222;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.login__form .login__btn .signup{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid black;
+    margin-top: 15px;
+    color: black;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.login__form .login__btn .login:hover{
+    background-color: #434343;
+}
+
+
+.inputErrors{
+    margin-top: 2px;
+    color: red;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px){
+
+    .login__container{
+        align-items: flex-start;
+    }
+
+    .login__form{
+        margin-top: 160px;
+    }
+
+}
+
