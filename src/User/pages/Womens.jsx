@@ -28,7 +28,7 @@ const Womens = () => {
       return 0;
     });
     setWomenProducts(sortedProducts);
-  }, [sortOption]);
+  }, [womenProducts, sortOption]);
 
   const handleSortChange = (e) => { 
     setSortOption(e.target.value);
