@@ -20,7 +20,7 @@ const Footer = () => {
                 <i className="fa-brands fa-facebook"></i>
                 <i className="fa-solid fa-envelope"></i>
             </div>
-            <p className='credits'>Developed By <a href="">Loganathan</a> | <i className="fa-solid fa-paper-plane"></i> loganathan2624@gmail.com</p>
+            <p className='credits'>Developed By <a href="www.linkedin.com/in/loganathan-g">Loganathan</a> | <i className="fa-solid fa-paper-plane"></i> loganathan2624@gmail.com</p>
         </div>
 
     </div>

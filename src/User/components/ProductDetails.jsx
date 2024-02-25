@@ -24,7 +24,7 @@ const ProductDetails = () => {
       .catch((err) => {
         console.error("Error fetching data:", err);
       });
-  },[]);
+  },[productId]);
 
   const addToCart = (product) => {
     console.log(product);

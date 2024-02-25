@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "../css/UserInformation.css";
 import UserProfile from "../assets/userprofile.svg";
@@ -9,7 +8,7 @@ const UserInformation = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    // formState: { errors },
     setValue,
   } = useForm();
 
@@ -25,6 +24,9 @@ const UserInformation = () => {
   };
 
   React.useEffect(() => {
+
+    if (!id) return; // Optionally
+    
     axios
       .get("http://localhost:3001/users/" + id)
       .then((res) => {
@@ -40,7 +42,7 @@ const UserInformation = () => {
       .catch((err) => {
         console.error("Error fetching data:", err);
       });
-  }, []);
+  }, [id, setValue]);
 
   return (
     <div className="userinfo__container">
