@@ -1,17 +1,17 @@
 import React from 'react'
-import { useForm } from 'react-hook-form'
-import axios from 'axios'
+// import { useForm } from 'react-hook-form'
+// import axios from 'axios'
 import { Link } from "react-router-dom";
 
 
 const UpdateProduct = () => {
 
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-        setValue,
-      } = useForm();
+    // const {
+    //     register,
+    //     handleSubmit,
+    //     formState: { errors },
+    //     setValue,
+    //   } = useForm();
 
     // const onSubmit = (data) => {
     // console.log(data);
